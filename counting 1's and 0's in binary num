@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int n,count1=0,count0=0;
+    printf("emter the number:");
+    scanf("%d",&n);
+    while(n>0){
+        if(n&1){
+            count1=count1+1;
+        }
+        else
+        {
+            count0=count0+1;
+        }
+        n=n>>1;
+    }
+    printf(" num of ones in num %d\n ",count1);
+    printf("num of zeros in num %d ",count0);
+}
